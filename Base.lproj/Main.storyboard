@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OLh-UK-dfz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CLu-OR-cQj">
+            <objects>
+                <navigationController id="OLh-UK-dfz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="5MJ-Gr-vIl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.32156862745098036" green="0.81568627450980391" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5CF-wR-X11">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="WIZ-Op-oLt" kind="relationship" relationship="rootViewController" id="E5q-qf-XuR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXK-6v-vEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="265"/>
+        </scene>
+        <!--Djur-->
+        <scene sceneID="ZKm-gp-7V1">
+            <objects>
+                <viewController id="WIZ-Op-oLt" customClass="FactMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YvE-GD-VQL"/>
+                        <viewControllerLayoutGuide type="bottom" id="3V4-9Y-tw5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dsN-cW-P11">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="tyP-wF-gIg">
+                                <rect key="frame" x="162" y="64" width="158" height="158"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UAd-yp-79Y" appends="YES" id="cYq-yi-FxQ"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiger" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-hw-04d">
+                                <rect key="frame" x="0.0" y="233" width="158" height="158"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ePX-T4-T1O" appends="YES" id="8LN-V4-pmE"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giraffe" translatesAutoresizingMaskIntoConstraints="NO" id="Fld-M1-fxU">
+                                <rect key="frame" x="162" y="233" width="158" height="158"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uqh-hq-p73" appends="YES" id="Usc-e0-bOH"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-Uy-gbs">
+                                <rect key="frame" x="0.0" y="402" width="158" height="158"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vcR-B4-gti" appends="YES" id="Uhq-SU-1W4"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="nTX-Ph-lXZ">
+                                <rect key="frame" x="162" y="402" width="158" height="158"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7t9-Sv-ju1" appends="YES" id="WJt-7V-IDo"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dolphin" translatesAutoresizingMaskIntoConstraints="NO" id="k7P-62-Igk">
+                                <rect key="frame" x="0.0" y="64" width="158" height="158"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BTF-Xf-402" appends="YES" id="0Fv-bi-css"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58823529411764708" green="0.8901960784313725" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Djur" id="fiq-Og-ZA1"/>
+                    <connections>
+                        <outletCollection property="animalViews" destination="nhW-hw-04d" id="Z3Y-2m-Tjs"/>
+                        <outletCollection property="animalViews" destination="k7P-62-Igk" id="v3X-xo-thb"/>
+                        <outletCollection property="animalViews" destination="tyP-wF-gIg" id="Xkv-e7-Wqu"/>
+                        <outletCollection property="animalViews" destination="Fld-M1-fxU" id="Xh2-ZP-QiL"/>
+                        <outletCollection property="animalViews" destination="QCg-Uy-gbs" id="qxJ-b6-qZe"/>
+                        <outletCollection property="animalViews" destination="nTX-Ph-lXZ" id="cvu-dJ-UU9"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="showFactDetail" id="59p-OR-1qV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Mj-tL-3C1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BTF-Xf-402">
+                    <connections>
+                        <action selector="showFactDetail:" destination="WIZ-Op-oLt" id="ozJ-ng-csp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UAd-yp-79Y">
+                    <connections>
+                        <action selector="showFactDetail:" destination="WIZ-Op-oLt" id="1yt-wO-ICv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ePX-T4-T1O">
+                    <connections>
+                        <action selector="showFactDetail:" destination="WIZ-Op-oLt" id="2hh-Hb-NYo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Uqh-hq-p73">
+                    <connections>
+                        <action selector="showFactDetail:" destination="WIZ-Op-oLt" id="6Cz-9v-Fqb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vcR-B4-gti">
+                    <connections>
+                        <action selector="showFactDetail:" destination="WIZ-Op-oLt" id="dB9-ay-QZB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7t9-Sv-ju1">
+                    <connections>
+                        <action selector="showFactDetail:" destination="WIZ-Op-oLt" id="T5z-8D-7wr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-91" y="265"/>
+        </scene>
+        <!--Fakta-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FactDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gHi-Zw-aiy"/>
+                        <viewControllerLayoutGuide type="bottom" id="6pB-HD-Mjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msb-xK-9hw">
+                                <rect key="frame" x="85" y="364" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.98262333950427616" green="1" blue="0.97995249116465255" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.90196078431372551" green="0.49411764705882355" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Nästa Fakta!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KOn-eF-fp9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fakta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-k7-5Hk">
+                                <rect key="frame" x="16" y="207" width="288" height="150"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.037782922937536441" green="0.054536429558011079" blue="0.0072409524001371892" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vet Du Att ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6G-8F-bEj">
+                                <rect key="frame" x="94" y="169" width="132" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92912638121546964" green="0.5675011877616315" blue="0.21164673156117142" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fakta" id="Ml5-vl-XrI"/>
+                    <connections>
+                        <outlet property="faktum" destination="vKU-k7-5Hk" id="ovc-Zu-hbG"/>
+                        <outlet property="nextFact" destination="msb-xK-9hw" id="cvJ-Tc-SDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dolphin" width="432" height="432"/>
+        <image name="elephant" width="432" height="432"/>
+        <image name="giraffe" width="432" height="432"/>
+        <image name="lion" width="432" height="432"/>
+        <image name="tiger" width="432" height="432"/>
+        <image name="zebra" width="432" height="432"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
